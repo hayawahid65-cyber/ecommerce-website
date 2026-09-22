@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>متجري الإلكتروني</title>
+  <!-- ربط ملف التنسيقات -->
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- 1. الشريط الإعلاني الأصفر العلوي -->
+  <div class="top-announcement-bar">
+    ⚡ عروض خاصة وتخفيضات حصريّة لعام 2026 - شحن مجاني للطلبات فوق $50! ⚡
+  </div>
+
+  <!-- 2. الهيدر الرئيسي -->
+  <header class="main-header">
+    <div class="logo">متجري<span class="highlight-yellow">.</span></div>
+    <nav class="nav-links">
+      <a href="#" class="active">الرئيسية</a>
+      <a href="#">المنتجات</a>
+      <a href="#">من نحن</a>
+      <a href="#">تواصل معنا</a>
+    </nav>
+    <button class="cart-btn">🛒 السلة</button>
+  </header>
+
+  <!-- 3. صورة البانر الرئيسية المضيئة من ملف مشروعك -->
+  <section class="banner-section">
+    <div class="banner-container">
+      <img src="hero-banner.jpg" alt="Shop Tech Now" class="hero-banner-img">
+    </div>
+</div>
+  </section>
+
+  <!-- 4. قسم الترحيب والمميزات -->
+  <section class="hero-section">
+    <span class="badge">عروض خاصة وتخفيضات 2026</span>
+    <h1>أحدث تشكيلة للتكنولوجيا العصرية</h1>
+    <p>تسوّق أفضل المنتجات الذكية بأعلى جودة، وأفضل الأسعار، مع توصيل سريع لجميع المناطق.</p>
+
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="icon">🚀</div>
+        <div>
+          <h4>توصيل سريع</h4>
+          <p>خلال 24-48 ساعة</p>
+        </div>
+      </div>
+      <div class="feature-card">
+        <div class="icon">🛡️</div>
+        <div>
+          <h4>دفع آمن</h4>
+          <p>طرق دفع متعددة وآمنة 100%</p>
+        </div>
+      </div>
+      <div class="feature-card">
+        <div class="icon">🎧</div>
+        <div>
+          <h4>دعم متواصل 24/7</h4>
+          <p>فريقنا جاهز للمساعدة في أي وقت</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. عنوان أحدث المنتجات -->
+  <h2 class="section-title">أحدث المنتجات</h2>
+
+  <!-- 6. شبكة المنتجات -->
+  <section class="products-grid">
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500" alt="ساعة ذكية">
+      <h3>ساعة ذكية عصرية</h3>
+      <p class="price">$49.99</p>
+      <button>أضف إلى السلة 🛒</button>
+    </div>
+
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500" alt="سماعات لاسلكية">
+      <h3>سماعات لاسلكية</h3>
+      <p class="price">$29.99</p>
+      <button>أضف إلى السلة 🛒</button>
+    </div>
+
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500" alt="حقيبة أنيقة">
+      <h3>حقيبة ظهر ذكية</h3>
+      <p class="price">$39.99</p>
+      <button>أضف إلى السلة 🛒</button>
+    </div>
+  </section>
+
+  <!-- 7. نموذج إتمام الطلب (بيانات التوصيل) -->
+  <section class="checkout-section">
+    <div class="checkout-card">
+      <h2>إتمام الطلب 🛒</h2>
+      <p>أدخلي بياناتكِ لتأكيد الطلب وسيتم التواصل معكِ فوراً</p>
+
+      <form id="orderForm">
+        <div class="form-group">
+          <label for="fullName">الاسم الكامل:</label>
+          <input type="text" id="fullName" placeholder="مثال: أمل أحمد" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">رقم الهاتف / الواتساب:</label>
+          <input type="tel" id="phone" placeholder="مثال: 0501234567" required>
+        </div>
+
+        <div class="form-group">
+          <label for="address">عنوان التوصيل:</label>
+          <input type="text" id="address" placeholder="المدينة، الشارع، رقم البناء" required>
+        </div>
+
+        <button type="submit" class="submit-order-btn">تأكيد وإرسال الطلب 🚀</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ربط ملف الجافاسكريبت -->
+  <script src="index.js"></script>
+</body>
+</html>
